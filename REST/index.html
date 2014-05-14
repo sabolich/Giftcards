@@ -1,0 +1,21 @@
+<!DOCTYPE html">
+<html>
+  <head>
+    <title>Simple REST request</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/vendor/handlebars.js"></script>
+    <script src="js/ajax.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <ul class="container-images"></ul>
+    <p class="error" style="display:none;">No images to show.</p>
+    <script type="text/x-handlebars-template" id="partial-images">
+      {{#each this}}
+        <li>
+          <img src="{{url}}" alt="{{title}}" />
+      {{/each}}
+    </script>
+  </body>
+</html>

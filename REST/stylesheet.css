@@ -1,0 +1,33 @@
+
+/* CSS Document */
+
+.container-images {
+  margin: 1rem auto;
+  list-style: none;
+  max-width: 1000px;
+  min-width: 300px;
+}
+.container-images li {
+  display: inline-block;
+  padding: .5rem;
+  width: 25%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.container-images li img {
+  max-width: 100%;
+  box-shadow: .2rem .2rem .5rem #ddd;
+}
+
+@media only screen
+and (min-device-width : 320px) and (max-device-width : 480px) {
+  .container-images {
+    margin: 1rem;
+    min-width: 0;
+  }
+  .container-images li {
+    width: 50%;
+  }
+}
+
